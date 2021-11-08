@@ -45,5 +45,14 @@ if __name__ == '__main__':
     # a su elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    fig.suptitle('Dos Funciones', fontsize=16)
+    ax = fig.add_subplot()
 
+    ax.plot(x, y1, c='blue', label='y1')
+    ax.plot(x, y2, c='red', label='y2')
+    ax.legend()
+    ax.grid()
+    plt.show()
+    ax.set_facecolor('lightgray')
     print("terminamos")
