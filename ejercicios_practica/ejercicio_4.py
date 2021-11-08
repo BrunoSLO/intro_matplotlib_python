@@ -57,10 +57,10 @@ if __name__ == '__main__':
     fig.suptitle("Graficos", fontsize=16)
     ax1 = fig.add_subplot(2, 2, 1)
     ax2 = fig.add_subplot(2, 2, 2)
-    ax3 =  fig.add_subplot(2, 2, 3)
+    ax3 = fig.add_subplot(2, 2, 3)
     ax4 = fig.add_subplot(2, 2, 4)
 
-    ax1.plot(x, y1, c='pink', label= "X al cuadrado")
+    ax1.plot(x, y1, c='pink', label= "X al cuadrado", marker='.', mec='lightsteelblue', ms='1')
     ax1.legend()
     ax1.grid(ls="dashed")
 
